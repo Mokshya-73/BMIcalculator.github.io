@@ -1,0 +1,196 @@
+*{margin: 0; padding: 0;font-family:monospace;}
+.container{
+    margin-top: 5%;
+    margin-left:5%;
+     display: grid;
+     justify-content:left;
+     align-content: center;
+     
+     
+     
+}
+
+body{
+    background: rgb(34, 1, 48);
+}
+
+h1{
+    padding-bottom: 10%;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+   font-size: 500%;
+}
+.value{
+    color: aliceblue;
+    font-size: 200%;
+}
+.submit-btn{
+    background-color: rgb(8, 102, 118);
+}
+.bmi-value{
+    background-color: rgb(212, 142, 243);
+    display:grid;
+    grid-template-rows: 50% 50%;
+    -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+    
+}
+#bmi-output{
+    font-size: 200%;
+}
+.status{
+    background-color: rgb(6, 82, 103);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
+.container > div{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 8px;
+}
+input{
+    background: #4a0233;
+    text-indent: 0.5em;
+    max-width:100% ;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@-webkit-keyframes glowing {
+    0% {
+      background-color: #ca5cc4;
+      -webkit-box-shadow: 0 0 3px #a05cca;
+    }
+    50% {
+      background-color: #a05cca;
+      -webkit-box-shadow: 0 0 15px #a05cca;
+    }
+    100% {
+      background-color: #a05cca;
+      -webkit-box-shadow: 0 0 3px #a05cca;
+    }
+  }
+button{
+    background: rgb(94, 3, 94);
+    cursor: pointer;
+}
+button:hover{
+    background: #57025d;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">  
+        <h1 >BMI Calculator</h1>
+        <label>
+            <div class="value">Enter Height:</div>
+        </label>
+        <input id="h-input" type="number" placeholder="Centimeters">
+        <br/><br/>      
+        <label>
+            <div class="value">Enter Weight :</div>   
+        </label>
+        <input id="w-input" type="number" placeholder="Kilogrames">
+        <br/><br/><br/>          
+        <button type="submit" onclick="Calculate()">Calculate BMI</button><br/>
+        <button onclick="reload()">Clear</button><br/><br/> <br/> 
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,320 @@
+*{margin: 0; padding: 0;font-family:monospace;}
+.container{
+    margin-top: 5%;
+    margin-left:5%;
+     display: grid;
+     justify-content:left;
+     align-content: center;
+     
+     
+     
+}
+
+body{
+    
+    background: rgb(34, 1, 48);
+}
+
+h1{
+    padding-bottom: 10%;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+   font-size: 500%;
+}
+h4{
+    font-size: 150%;
+}
+.value{
+    color: aliceblue;
+    font-size: 200%;
+}
+.submit-btn{
+    background-color: rgb(8, 102, 118);
+}
+.bmi-value{
+    background-color: rgb(212, 142, 243);
+    display:grid;
+    grid-template-rows: 50% 50%;
+    -webkit-animation: glowing 500ms infinite;
+        -moz-animation: glowing 500ms infinite;
+        -o-animation: glowing 500ms infinite;
+        animation: glowing 500ms infinite;
+    
+}
+#bmi-output{
+    font-size: 200%;
+    color: #4a0233;
+}
+.status{
+    background-color: rgb(6, 82, 103);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
+.container > div{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 8px;
+}
+#bmi-status{
+    font-size: 150%;
+    color: rgb(182, 234, 237);
+}
+input{
+    background: #4a0233;
+    text-indent: 0.5em;
+    max-width:100% ;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 170%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@-webkit-keyframes glowing {
+    0% {
+      background-color: #ca5cc4;
+      -webkit-box-shadow: 0 0 3px #a05cca;
+    }
+    50% {
+      background-color: #ca5cc4;
+      -webkit-box-shadow: 0 0 15px #ff05c5;
+    }
+    100% {
+      background-color: #a05cca;
+      -webkit-box-shadow: 0 0 3px #a05cca;
+    }
+  }
+button{
+    background: rgb(94, 3, 94);
+    cursor: pointer;
+    color: whitesmoke;
+}
+button:hover{
+    background: #e6a2eb;
+    color: rgb(0, 0, 0);
+    
+}
+#plane{
+    display: inline-block;
+  
+  background-color: #000000c1;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  border: 5px solid #ff0073;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#plane span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#plane span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#plane:hover span {
+  padding-right: 25px;
+}
+
+#plane:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    
+
+.dite{
+    width: 20%;
+    
+    position: absolute;
+    
+    top: 50px;
+    left: 900px;
+  
+  
+    
+}
+
+p,th{
+    color: #FFFFFF;
+    font-size: 150%;
+    text-align: center;
+
+}
+
+
+ul{
+    list-style-type: circle;
+    color: #FFFFFF;
+    font-size: 150%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  tr:nth-child(even){
+    background-color: #78d890
+}
+tr:nth-child(odd){
+    background-color: #c9d186
+}
+
+
+
+.table1, th, td {
+
+    width: 30%;
+    height: 40%;
+    left: 20%;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+   
+  }
+
+  .h1{
+    color: aqua;
+    font-size: 400%;
+    text-align:left;
+    padding-top: 40%;
+    padding-bottom: 20%;
+    padding-left: 3%;
+    text-decoration:solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+
+
+  h2{
+    color: rgb(180, 1, 91);
+    font-size: 300%;
+    padding-left: 20%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+    
+
+   
+  }
+
+  #table2{
+  
+  border: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  width: 100%;
+  
+  
+  }
+
+  #table3{
+    width: 100%;
+  border: 1px solid;
+  height: 50%;
+  }
+
+  .girl{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 800px;
+  }
+
+
+  .plate15{
+    position: absolute;
+    display: block;
+    top: 1000px;
+    left: 950px;
+  }
+
+  .fruit3{
+    position: absolute;
+    display: block;
+    top: 1900px;
+    left: 1000px;
+
+  }
+
+  .vegetables8{
+    position: absolute;
+    display: block;
+    top: 2500px;
+    left: 800px;
+  }
+
+  .water10{
+    position: absolute;
+    display: block;
+    top: 2800px;
+    left: 1100px;
+  }
+
+  .banana13{
+    position: absolute;
+    display: block;
+    top: 3100px;
+    left: 1000px;
+  }
+  
+  .milk05{
+    position: absolute;
+    display: block;
+    top: 3000px;
+    left: 700px;
+  }
+
+  .vegetables02{
+    position: absolute;
+    display: block;
+    top: 3370px;
+    left: 870px;
+  }
+
+  .rice11{
+    position: absolute;
+    display: block;
+    top: 4100px;
+    left: 500px;
+  }
+
+  .result09{
+    position: absolute;
+    display: block;
+    top: 4000px;
+    left: 1110px;
+  }
+  
+    
+  
